@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-file_path = '/Users/noelfoster/Desktop/stream_folder/social_media_usage.csv'
+file_path = 'social_media_usage.csv'
 ss = pd.read_csv(file_path)
 
 def clean_sm(x):
