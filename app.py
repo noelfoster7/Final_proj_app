@@ -2,7 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-s = pd.read_csv('/Users/noelfoster/Desktop/stream_folder/social_media_usage.csv')
+
+file_path = 'stream_folder/social_media_usage.csv'
+s = pd.read_csv(file_path)
 
 def clean_sm(x):
     return np.where(x == 1, 1, 0)
