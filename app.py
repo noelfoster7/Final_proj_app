@@ -4,7 +4,7 @@ import numpy as np
 
 
 file_path = 'social_media_usage.csv'
-ss = pd.read_csv(file_path)
+s = pd.read_csv(file_path)
 
 def clean_sm(x):
     return np.where(x == 1, 1, 0)
