@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 
 
-file_path = 'https://github.com/noelfoster7/Final_proj_app/blob/main/social_media_usage.csv'
-s = pd.read_csv(file_path)
+file_path = '/Users/noelfoster/Desktop/stream_folder/social_media_usage.csv'
+ss = pd.read_csv(file_path)
 
 def clean_sm(x):
     return np.where(x == 1, 1, 0)
